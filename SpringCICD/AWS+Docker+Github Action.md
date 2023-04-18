@@ -1,4 +1,14 @@
-## AWS EC2 인스턴스 생성하기
+# AWS + Docker + Github Action 사용한 서버 자동배포 [Spring CICD]
+
+**⚙️ 개발 환경**
+- Docker
+- AWS EC2 Amazone Linux 2
+- Github Action
+- Spring boot
+- Java 17
+- Gradle
+
+## 📍 AWS EC2 인스턴스 생성하기
 <img width="751" alt="스크린샷 2023-04-18 오후 7 41 39" src="https://user-images.githubusercontent.com/62213813/232753620-993fcaf8-9e8d-436b-b22e-224eca304441.png">
 Amazone Linux 이미지를 프리티어로 사용함
 </br>
@@ -13,7 +23,7 @@ Amazone Linux 이미지를 프리티어로 사용함
 
 </br></br></br>
 
-## AWS EC2 인스턴스에 도커 설치하기
+## 📍 AWS EC2 인스턴스에 도커 설치하기
 키페어가 있는 폴더 내부에서 아래의 명령어를 통해 ssh 접속
 ```
 ssh -i "키페어 파일이름" "퍼블릭 DNS 주소"
@@ -46,7 +56,7 @@ docker-compose --version
 ```
 </br></br></br>
 
-## Github-Actions 스크립트 파일 생성
+## 📍 Github-Actions 스크립트 파일 생성
 Github repository - Actions - Java with Gradle 선택
 
 <img width="793" alt="스크린샷 2023-04-18 오후 7 53 36" src="https://user-images.githubusercontent.com/62213813/232756072-577caf4e-94fd-4616-b212-6e6f6bd86eae.png">
@@ -117,7 +127,9 @@ jobs:
           docker image prune -a -f
 
 ```
+
 </br></br>
+
 위 코드를 순서대로 설명해보면, 아래와 같음
 1. 배포를 위한 application-prod.yml 파일 생성하기 : 개발에서 사용되는 rds 주소 및 비밀번호를 노출할 수 없기 때문에 해당 파일은 .gitignore 해두고 배포 시 secret 키 이용해서 생성함
 2. jar 파일 빌드 : 빌드 전 권한 설정해주기
@@ -125,10 +137,37 @@ jobs:
 4. 배포 : docker hub에서 image pull -> 이전에 올라와 있던 것 stop -> docker run -> 사용 중이 아닌 이미지 삭제
 
 </br></br></br>
+
+### Dockerfile 코드
+```
+FROM openjdk:17-alpine
+
+ARG JAR_FILE=/build/libs/sejongmate-0.0.1-SNAPSHOT.jar
+
+COPY ${JAR_FILE} /sejongmate.jar
+
+ENTRYPOINT ["java","-jar","-Dspring.profiles.active=prod", "/sejongmate.jar"]
+```
+</br></br></br>
 ### Github Action 비밀키 생성법
 Github Repository > Settings > Secrets and variables > Actions > New repository secret 버튼을 통해 생성 가능
 <img width="793" alt="스크린샷 2023-04-18 오후 8 06 56" src="https://user-images.githubusercontent.com/62213813/232758903-e62b98f0-1277-4425-8bcd-464f5b534edd.png">
 
 </br></br></br>
-## 배포 완료 확인
+
+## 📍 배포 완료 확인
 <img width="655" alt="스크린샷 2023-04-18 오후 8 08 45" src="https://user-images.githubusercontent.com/62213813/232759234-c2e94106-efba-4334-9d40-e17c6d2a87df.png">
+
+</br></br></br>
+
+### 📚 Trouble Shooting
+**build 시 발생한 문제**
+
+- 스프링 부트 gradle 플러그인 2.5 버전부터 gradle 빌드 시 JAR 파일이 2개 생성된다.
+    - 프로젝트 이름-버전 - .jar
+    - 프로젝트 이름-버전 - plain.jar
+- `build.gradle`에 아래 코드 삽입
+  ```
+  jar { enabled = false }
+  ```  
+- 명확히 하기 위해 Dockerfile에서 build 할 jar 파일 이름으로 지정해줌
