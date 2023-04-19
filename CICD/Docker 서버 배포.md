@@ -72,4 +72,5 @@ sudo docker run -p 8080:8080 9keyyyy/sejongmate
 </br></br>
 
 배포 완료
+</br>
 <img width="655" alt="스크린샷 2023-04-18 오후 9 12 48" src="https://user-images.githubusercontent.com/62213813/232773794-90e9abfb-7e41-4539-9ea8-892577776ac3.png">
