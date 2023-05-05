@@ -14,3 +14,4 @@
 - [API 개발 컬렉션 조회 최적화](https://github.com/9keyyyy/TIL/blob/main/Spring/API%20%EA%B0%9C%EB%B0%9C%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%A1%B0%ED%9A%8C%20%EC%B5%9C%EC%A0%81%ED%99%94.md)
 - [API 개발 고급 정리](https://github.com/9keyyyy/TIL/blob/main/Spring/API%20%EA%B0%9C%EB%B0%9C%20%EC%A0%95%EB%A6%AC.md)
 - [OSIV와 성능 최적화](https://github.com/9keyyyy/TIL/blob/main/Spring/OSIV%EC%99%80%20%EC%84%B1%EB%8A%A5%20%EC%B5%9C%EC%A0%81%ED%99%94.md)
+- [JWT access/refresh token 인증 구현(with Redis)](https://github.com/9keyyyy/TIL/blob/main/Spring/JWT%20access%26refresh%20token%20%EA%B5%AC%ED%98%84(with%20Redis).md)
