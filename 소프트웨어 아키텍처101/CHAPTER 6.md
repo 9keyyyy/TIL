@@ -42,7 +42,7 @@ public void decision(int c1, int c2) {
     return 1;
 }
 ```
-<img width="500" alt="스크린샷 2024-11-26 오후 6 09 21" src="https://open.oss.navercorp.com/storage/user/2886/files/7bca53f2-0f84-42a4-a764-6df20c121bff">
+<img width="517" alt="스크린샷 2024-11-26 오후 7 17 32" src="https://github.com/user-attachments/assets/db49a300-b619-459b-9944-8a55f1119adf">
 
 </br>
 
@@ -83,8 +83,8 @@ public void decision(int c1, int c2) {
 
 #### 순환 의존성
 - **모듈성**은 암묵적인 아키텍처의 특성 
-- 아래처럼 각 컴포넌트가 다른 컴포넌트에 있는 코드를 참조하는 경우, 개발자는 어느 한 컴포넌트를 재사용하기 위해 그에 딸린 다른 컴포넌트들도 가져와야 하므로 모듈성이 매우 떨어짐
-  <img width="469" alt="스크린샷 2024-11-26 오후 6 41 11" src="https://open.oss.navercorp.com/storage/user/2886/files/23efccd4-a7f6-44f9-aa36-9f6b9a4911bf">
+- 아래처럼 각 컴포넌트가 다른 컴포넌트에 있는 코드를 참조하는 경우, 개발자는 어느 한 컴포넌트를 재사용하기 위해 그에 딸린 다른 컴포넌트들도 가져와야 하므로 모듈성이 매우 떨어짐 </br>
+  <img width="485" alt="스크린샷 2024-11-26 오후 7 17 54" src="https://github.com/user-attachments/assets/1fa9e294-2a11-46ce-80ca-4a319b6d29d3">
 - 피트니스 함수로 순환 참조 여부를 발견함으로써 해결할 수 있음
 - 자바의 경우 `JDepend`라는 메트릭 도구로 패키지 간 의존성 체크 (파이썬에서 `gc`)
 - fastapi에서는 애플리케이션 시작 시 import error
@@ -108,7 +108,8 @@ void AllPackages() {
 
 #### 레이어드 아키텍처에서의 순환 참조
 
-<img width="400" alt="스크린샷 2024-11-26 오후 6 50 37" src="https://open.oss.navercorp.com/storage/user/2886/files/6bf2e20b-be91-4f95-bf9b-0272d3ec2e59">
+<img width="414" alt="스크린샷 2024-11-26 오후 7 18 13" src="https://github.com/user-attachments/assets/e9e9672b-449d-446a-bf85-8434bbbb3fa9">
+
 
 - 각 레이어 간의 올바른 의존 관계를 정의하고 이를 실천할 수 있도록 검증하는 테스트 코드 생성 가능
 
