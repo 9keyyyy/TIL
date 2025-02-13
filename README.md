@@ -18,3 +18,15 @@
 
 ## 자료구조
 - [세그컨트 트리](https://github.com/9keyyyy/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8%20%ED%8A%B8%EB%A6%AC.md)
+
+
+## 📚 [소프트웨어 아키텍처101](https://product.kyobobook.co.kr/detail/S000001810445?utm_source=google&utm_medium=cpc&utm_campaign=googleSearch&gt_network=g&gt_keyword=&gt_target_id=dsa-1787880729500&gt_campaign_id=9979905549&gt_adgroup_id=132556570510&gad_source=1)
+- [CHAPTER 4. 아키텍처 특성 정의](https://github.com/9keyyyy/TIL/blob/main/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98101/CHAPTER%204.md)
+- [CHAPTER 5. 아키텍처 특성 식별](https://github.com/9keyyyy/TIL/blob/main/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98101/CHAPTER%205.md)
+- [CHAPTER 6. 아키텍처 특성의 측정 및 거버넌스](https://github.com/9keyyyy/TIL/blob/main/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98101/CHAPTER%206.md)
+- [CHAPTER 14. 이벤트 기반 아키텍처 스타일](https://github.com/9keyyyy/TIL/blob/main/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98101/CHAPTER%2014.md)
+
+## 📚 [쿠버네티스 패턴](https://www.yes24.com/product/goods/89861207)
+- [CHAPTER 2. 예측 범위 내의 요구사항](https://github.com/9keyyyy/TIL/blob/main/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%8C%A8%ED%84%B4/2%EC%9E%A5.md)
+- [CHAPTER 3. 선언적 배포](https://github.com/9keyyyy/TIL/blob/main/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%8C%A8%ED%84%B4/3%EC%9E%A5.md)
+- [CHAPTER 4. 정상상태 점검](https://github.com/9keyyyy/TIL/blob/main/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%8C%A8%ED%84%B4/4%EC%9E%A5.md)
