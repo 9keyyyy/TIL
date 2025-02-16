@@ -30,3 +30,6 @@
 - [CHAPTER 2. 예측 범위 내의 요구사항](https://github.com/9keyyyy/TIL/blob/main/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%8C%A8%ED%84%B4/2%EC%9E%A5.md)
 - [CHAPTER 3. 선언적 배포](https://github.com/9keyyyy/TIL/blob/main/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%8C%A8%ED%84%B4/3%EC%9E%A5.md)
 - [CHAPTER 4. 정상상태 점검](https://github.com/9keyyyy/TIL/blob/main/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%8C%A8%ED%84%B4/4%EC%9E%A5.md)
+- [CHAPTER 5. 수명주기 관리](https://github.com/9keyyyy/TIL/blob/main/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%8C%A8%ED%84%B4/5%EC%9E%A5.md)
+- [CHAPTER 6. 자동 배치](https://github.com/9keyyyy/TIL/blob/main/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%8C%A8%ED%84%B4/6%EC%9E%A5.md)
+
