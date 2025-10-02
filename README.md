@@ -1,6 +1,4 @@
 # TIL
-하루하루 공부한 것을 정리하는 레포지토리입니다.
-
 ## CICD
 - [도커를 사용한 서버 배포](https://github.com/9keyyyy/TIL/blob/main/CICD/Docker%20%EC%84%9C%EB%B2%84%20%EB%B0%B0%ED%8F%AC.md)
 - [AWS + Docker + Github Action 사용한 서버 자동배포](https://github.com/9keyyyy/TIL/blob/main/CICD/AWS%2BDocker%2BGithub%20Action.md)
@@ -17,7 +15,7 @@
 - [JWT access/refresh token 인증 구현(with Redis)](https://github.com/9keyyyy/TIL/blob/main/Spring/JWT%20access%26refresh%20token%20%EA%B5%AC%ED%98%84(with%20Redis).md)
 
 ## 자료구조
-- [세그컨트 트리](https://github.com/9keyyyy/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8%20%ED%8A%B8%EB%A6%AC.md)
+- [세그먼트 트리](https://github.com/9keyyyy/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8%20%ED%8A%B8%EB%A6%AC.md)
 
 
 ## 📚 [소프트웨어 아키텍처101](https://product.kyobobook.co.kr/detail/S000001810445?utm_source=google&utm_medium=cpc&utm_campaign=googleSearch&gt_network=g&gt_keyword=&gt_target_id=dsa-1787880729500&gt_campaign_id=9979905549&gt_adgroup_id=132556570510&gad_source=1)
@@ -33,3 +31,5 @@
 - [CHAPTER 5. 수명주기 관리](https://github.com/9keyyyy/TIL/blob/main/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%8C%A8%ED%84%B4/5%EC%9E%A5.md)
 - [CHAPTER 6. 자동 배치](https://github.com/9keyyyy/TIL/blob/main/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%8C%A8%ED%84%B4/6%EC%9E%A5.md)
 
+## 📚 가상 면접으로 배우는 대규모 시스템 설계
+- [CHAPTER 4. 처리율 제한 장치의 설계](https://github.com/9keyyyy/TIL/blob/main/%EA%B0%80%EC%83%81%20%EB%A9%B4%EC%A0%91%20%EC%82%AC%EB%A1%80%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20%EB%8C%80%EA%B7%9C%EB%AA%A8%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%84%A4%EA%B3%84/4%EC%9E%A5%20%EC%B2%98%EB%A6%AC%EC%9C%A8%20%EC%A0%9C%ED%95%9C%20%EC%9E%A5%EC%B9%98%EC%9D%98%20%EC%84%A4%EA%B3%84.md)
